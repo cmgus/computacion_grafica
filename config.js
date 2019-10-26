@@ -27,7 +27,8 @@ function init() {
 
 function axisX() {
     
-    let axisx = new Recta(new Punto(-midX, 0), new Punto(midX, 0), secondary, 2)
+    rectas.push(new Recta(new Punto(-midX, 0), new Punto(midX, 0), secondary, 2))
+    
     for(let i = 1; i < rayasX; i++) {
         txts.push(new Texto(i, new Punto(i-0.2, -0.7, primary)))
         rectas.push(new Recta(new Punto(i, 0.1), new Punto(i, -0.1), secondary))
@@ -36,11 +37,12 @@ function axisX() {
         txts.push(new Texto(-i, new Punto((i+0.3)*-1, -0.7, primary)))
         rectas.push(new Recta(new Punto(-i, 0.1), new Punto(-i, -0.1), secondary))
     }
-    axisx.render()
+    //axisx.render()
 }
 function axisY() {
     
-    let axisy = new Recta(new Punto(0, -midY), new Punto(0, midY), secondary, 2)
+    rectas.push(new Recta(new Punto(0, -midY), new Punto(0, midY), secondary, 2))
+
     for(let i = 1; i < rayasY; i++) {
         txts.push(new Texto(i, new Punto(-0.9, (i), primary)))
         rectas.push(new Recta(new Punto(0.1, i), new Punto(-0.1, i), secondary))
@@ -49,6 +51,6 @@ function axisY() {
         txts.push(new Texto(-i, new Punto(-1.1, (i+0.3)*-1, primary)))
         rectas.push(new Recta(new Punto(0.1, -i), new Punto(-0.1, -i), secondary))
     }
-    axisy.render()
+    //axisy.render()
 }
 
