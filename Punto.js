@@ -13,4 +13,10 @@ class Punto {
         point(this.xpos, this.ypos)
 
     }
+    setX(newXpos) {
+        this.xpos = newXpos
+    }
+    setY(newYpos) {
+        this.xpos = newYpos
+    }
 }

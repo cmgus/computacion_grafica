@@ -7,6 +7,7 @@ class  Texto {
     render() {
         
         textSize(8)
+        noStroke();
         fill(60,111,156);
         text(this.texto, this.p1.xpos, this.p1.ypos);
     }

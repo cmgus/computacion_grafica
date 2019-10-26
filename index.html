@@ -8,15 +8,33 @@
     <script src="p5.min.js"></script>
     
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; color: aliceblue; font-family: sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
         body { background: #003f5c; }
-        .wrapper { margin: 2em; }
+        .wrapper { margin: 2em; text-align: center; }
         .center { display: flex; justify-content: center; }
+        .text-light { color: aliceblue; }
     </style>
 </head>
 <body>
     <div id="controles" class="wrapper">
-        <h1>Controles</h1>
+        <div class="div">
+
+            <label for="xpos" class="text-light">Coor x</label>
+            <input id="xpos" type="text" style="width: 50px;">
+            <label for="ypos" class="text-light">Coor y</label>
+            <input id="ypos" type="text" style="width: 50px;">
+            <button id="btn-graficar">Graficar</button>
+            <button id="btn-unir">Unir</button>
+
+            <label for="rotar" class="text-light">Rotar </label>
+            <input id="rotar" type="text" style="width: 50px;">
+            <button id="btn-rotar-izq">←</button>
+            <button id="btn-graficar-der">→</button>
+
+            <label for="escalar" class="text-light">Ecalar en: </label>
+            <input id="escalar" type="text" style="width: 50px;">
+            <button id="btn-graficar">Escalar</button>
+        </div>
     </div>
     <div id="canvas" class="wrapper center"></div>
 
@@ -25,6 +43,5 @@
     <script src="Recta.js"></script>
     <script src="Texto.js"></script>
     <script src="sketch.js"></script>
-    
 </body>
 </html>
